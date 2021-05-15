@@ -37,18 +37,18 @@ puts "#{choice_plan[:place]}ですね。"
 puts "何名で予約されますか？"
 while true
   print "人数を入力  >  "
-  numbers = gets.to_i
-  break if numbers > 0
+  people = gets.to_i
+  break if people > 0
   puts "1以上を入力してください。"
 end
 
 # 人数を復唱
-puts "#{numbers}名ですね"
+puts "#{people}名ですね"
 
 # 5名以上は10%割引にする
-total_price = choice_plan[:price] * numbers
+total_price = choice_plan[:price] * people
 
-if numbers >= 5
+if people >= 5
   total_price *= 0.9
   puts "5名以上ですので10%割引となります"
 end
