@@ -1,4 +1,4 @@
-require "pry"
+# require "pry"
 
 
 # プラン一覧のデータを作る
