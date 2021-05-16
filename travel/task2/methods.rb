@@ -42,7 +42,7 @@ def decide_number_of_tourists(chosen_plan)
 end
 
 # 合計金額の提示(場所と人数)
-def calculation_total(chosen_plan, number_of_tourists)
+def calculate_charges(chosen_plan, number_of_tourists)
   # 人数を元に合計金額を出す
   total_price = chosen_plan[:price] * number_of_tourists
   # 5人以上(>=)であれば10%割引

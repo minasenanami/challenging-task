@@ -16,4 +16,4 @@ chosen_plan = choose_plan(plans)
 number_of_tourists = decide_number_of_tourists(chosen_plan)
 
 #　一人の旅行代金と人数を使い合計金額を出す
-calculation_total(chosen_plan, number_of_tourists)
+calculate_charges(chosen_plan, number_of_tourists)
