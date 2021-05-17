@@ -1,7 +1,7 @@
 class Brave < Character
   def attack(monster)
     damage = calculate_damage(monster)
-    puts "#{name} の攻撃!"
+    puts "#{@name} の攻撃!"
     monster.hp -= damage
     puts "#{monster.name} に #{damage} のダメージを与えた!"
     monster.hp = 0 if monster.hp < 0

@@ -19,9 +19,8 @@ def battle
     # 毎ターンの両者の残HPを表示
     # 決着時(どちらかのhpが0の時)メッセージを出す。
   while brave.hp > 0 && monster.hp > 0
-    brave.attack(monster)
-    monster.attack(brave)
-
+    brave.attack(monster) if brave.hp > 0
+    monster.attack(brave) if monster.hp > 0
     puts <<~TEXT
     *=*=*=*=*=*=*=*=*=*=*
     【#{brave.name}】HP: #{brave.hp}
